@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="10117" systemVersion="15D21" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="BYZ-38-t0r">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="10085"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="Navigation_Bars" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
+                        <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <navigationBar contentMode="scaleToFill" misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="Ny7-TJ-1pa">
+                                <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="320" id="86E-Ge-qlC"/>
+                                    <constraint firstAttribute="height" constant="44" id="bee-DS-nHW"/>
+                                    <constraint firstAttribute="width" constant="320" id="jvd-lK-ieT"/>
+                                    <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="44" id="kZ2-GO-36Z"/>
+                                </constraints>
+                                <items>
+                                    <navigationItem title="Navigation App" id="Y6X-vl-5eE">
+                                        <barButtonItem key="leftBarButtonItem" title="Item" systemItem="organize" id="cuT-wd-neF"/>
+                                    </navigationItem>
+                                </items>
+                            </navigationBar>
+                            <toolbar opaque="NO" clearsContextBeforeDrawing="NO" contentMode="scaleToFill" misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="kEk-s9-ZuP">
+                                <rect key="frame" x="0.0" y="529" width="320" height="44"/>
+                                <items>
+                                    <barButtonItem title="Left" id="4YV-xa-HAS"/>
+                                    <barButtonItem style="plain" systemItem="flexibleSpace" id="BAh-Yd-ziv"/>
+                                    <barButtonItem title="Right" id="v4m-Cm-wII"/>
+                                </items>
+                            </toolbar>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="Ny7-TJ-1pa" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="topMargin" id="0Op-js-XeU"/>
+                            <constraint firstItem="Ny7-TJ-1pa" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="topMargin" id="98C-1M-Gr7"/>
+                            <constraint firstItem="Ny7-TJ-1pa" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="DdB-Dd-r5P"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="Ny7-TJ-1pa" secondAttribute="trailing" constant="-20" id="FRp-I5-2Iv"/>
+                            <constraint firstAttribute="bottomMargin" secondItem="kEk-s9-ZuP" secondAttribute="bottom" id="Fkz-0c-ilr"/>
+                            <constraint firstItem="Ny7-TJ-1pa" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" constant="-20" id="Y3e-sF-v0X"/>
+                            <constraint firstItem="kEk-s9-ZuP" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" constant="-20" id="fSs-Mm-ho7"/>
+                            <constraint firstItem="Ny7-TJ-1pa" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="gEp-Sy-YLf"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="Ny7-TJ-1pa" secondAttribute="trailing" constant="-20" id="iOK-Gd-y33"/>
+                            <constraint firstItem="Ny7-TJ-1pa" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" constant="-20" id="idT-kn-Jj2"/>
+                            <constraint firstItem="Ny7-TJ-1pa" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="topMargin" id="pEd-b8-f8x"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="kEk-s9-ZuP" secondAttribute="trailing" constant="-20" id="pQY-cP-5Vl"/>
+                        </constraints>
+                    </view>
+                    <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina4"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="305" y="355"/>
+        </scene>
+    </scenes>
+</document>
