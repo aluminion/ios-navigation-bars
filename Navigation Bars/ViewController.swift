@@ -10,9 +10,19 @@ import UIKit
 
 class ViewController: UIViewController {
 
+    var timer = NSTimer()
+    
+    var count = 0
+    
+    func result(){
+        count+=1
+        print("Called : \(count)")
+    }
+    
     override func viewDidLoad() {
         super.viewDidLoad()
-        // Do any additional setup after loading the view, typically from a nib.
+        timer = NSTimer.scheduledTimerWithTimeInterval(1, target: self, selector: #selector(ViewController.result), userInfo: nil, repeats: true)
+        
     }
 
     override func didReceiveMemoryWarning() {
